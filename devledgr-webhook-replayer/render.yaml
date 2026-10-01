@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: devledgr-webhook-engine
+    env: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: WEBHOOK_SECRET
+        generateValue: true

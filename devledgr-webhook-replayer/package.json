@@ -1,0 +1,23 @@
+{
+  "name": "devledgr-webhook-replayer",
+  "version": "1.0.0",
+  "description": "Production-grade idempotent webhook buffer, deduplicator and retry engine for DevLedgr challenges",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "fintech",
+    "idempotency",
+    "webhook",
+    "deduplication",
+    "hmac",
+    "devledgr"
+  ],
+  "author": "michojekunle",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
